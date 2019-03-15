@@ -1,0 +1,79 @@
+﻿:root {
+    --color-fondo: #f9f9f9;
+    --color-fondo-elementos: silver;
+    --text0:white;
+    --c0: #3c0; 
+    --c1: #A5A6A6;
+    --c2: #090;
+    --c3: #004200;
+    --c4: black;
+}
+
+/* Estilos iniciales
+------------------------------------*/
+.sheetSliderRegistro {
+    background-color: var(--c3);
+    position: relative;
+    width: 100%;
+    padding-bottom: 300%;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+.sheetSliderRegistro input,
+.sh__btnsRegistro, .sh__metaRegistro{display: none;}
+/* reset */
+.sheetSliderRegistro img{
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-shadow: 0 0 transparent;
+    text-decoration: none;
+}
+/* Contenedor
+------------------------------------*/
+.sh__contentRegistro {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    transition: transform .7s cubic-bezier(.54,0,.1,1);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Estilos para los items
+------------------------------------*/
+.sh__itemRegistro {
+    display: block;
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 300px;
+}
+.sh__itemRegistro img {
+    height: 50%;
+    width: auto;
+}
+
+/* Si los input estan "checked"
+------------------------------------*/
+/* Animacion vertical*/
+.sh-verticalRegistro .sh__itemRegistro:nth-child(2) {top: 100%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(3) {top: 200%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(4) {top: 300%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(5) {top: 400%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(6) {top: 500%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(7) {top: 600%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(8) {top: 700%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(9) {top: 800%}
+.sh-verticalRegistro .sh__itemRegistro:nth-child(10) {top: 900%}
+
+.sh-verticalRegistro input:nth-child(1):checked~.sh__contentRegistro {transform: translate3d(0%, 0, 0);}
+.sh-verticalRegistro input:nth-child(2):checked~.sh__contentRegistro {transform: translate3d(0, -100%, 0);}
+.sh-verticalRegistro input:nth-child(3):checked~.sh__contentRegistro {transform: translate3d(0, -200%, 0);}
+.sh-verticalRegistro input:nth-child(4):checked~.sh__contentRegistro {transform: translate3d(0, -300%, 0);}
+.sh-verticalRegistro input:nth-child(5):checked~.sh__contentRegistro {transform: translate3d(0, -400%, 0);}
+.sh-verticalRegistro input:nth-child(6):checked~.sh__contentRegistro {transform: translate3d(0, -500%, 0);}
+.sh-verticalRegistro input:nth-child(7):checked~.sh__contentRegistro {transform: translate3d(0, -600%, 0);}
+.sh-verticalRegistro input:nth-child(8):checked~.sh__contentRegistro {transform: translate3d(0, -700%, 0);}
+.sh-verticalRegistro input:nth-child(9):checked~.sh__contentRegistro {transform: translate3d(0, -800%, 0);}
+.sh-verticalRegistro input:nth-child(10):checked~.sh__contentRegistro {transform: translate3d(0, -900%, 0);}

@@ -1,0 +1,122 @@
+h1, .titulo{
+color: var(--c3);
+text-align: center;
+font-size: 220%;
+font-weight: bold;
+padding: 10px;
+}
+/* Colores */
+:root {
+    --color-fondo: #f9f9f9;
+    --color-fondo-elementos: silver;
+    --text0:white;
+    --c0: #3c0; 
+    --c1: #A5A6A6;
+    --c2: #090;
+    --c3: #004200;
+    --c4: black;
+}
+.textodiv{
+	top: 220px;
+	position: relative;
+	height: 200px;
+	margin-bottom: 1px;
+	background-color: var(--color-fondo);
+	padding: 1em;
+	padding-bottom: 9.10em;
+	font-size:100%; 
+}
+.contenedor {
+	text-align: center;
+	background-color: var(--color-fondo-elementos);
+	height: 700px;
+	width: 90%;
+	margin-left: 5%;
+}
+.contenedor li {
+	text-align: left;
+	font-size: 120%;
+	color: var(--c3);
+	margin-top: 10px;
+}
+.contenedor span {
+	font-weight: bold;
+	font-size:150%; 
+}
+
+.uno, .dos{
+	width: 49.85%;
+	height: 700px;
+	text-align: center;
+	overflow: hidden;
+	background-size: 800px;
+}
+.uno{
+	background-image: url(../img/RegistroUsuario.jpeg);
+	background-size: 100% 50%;
+	float: left;
+}
+.dos{
+	background-image: url(../img/RegistroEmpresa.jpeg);
+	float: right;
+}
+/*.d1uno{
+	margin: auto;	
+	background-image: url("../img/RegistroUsuario.jpeg");
+	box-shadow: 6px 6px 6px black;
+	transition: height 2s,width 2s, border-radius 2s, transform 1s;	
+}*/
+
+/*.d1uno:hover{
+	background-image: urll("../registrarse/image/usuario.jpg");
+	webkit-transform:scale(1.1);transform:scale(1.1);
+	overflow:hidden;
+	filter: saturate(580%);
+	cursor:pointer;
+}*/
+/*
+.d2dos:hover{
+	background-image: url("../registrarse/image/industria.png");
+	webkit-transform:scale(1.1);transform:scale(1.1);
+	overflow:hidden;
+	filter: saturate(280%);
+	cursor:pointer;        
+}*/
+
+.uno, .dos {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: 500ms -webkit-filter linear;
+	-moz-transition: 500ms -moz-filter linear;
+	-moz-transition: 500ms filter linear;
+	-ms-transition: 500ms -ms-filter linear;
+	-o-transition: 500ms -o-filter linear;
+	transition: 500ms filter linear, 500ms -webkit-filter linear;
+}
+.uno:hover, .dos:hover,.textodiv:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+section form div div input.Btn_formulario {
+	position:relative;
+	margin: 1em 0 0 0;
+	width: 200px;
+	height: 60px;
+	z-index: 9;
+}
+.divboton{
+	position: relative;
+	height:100px;
+	margin-top: 120px;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+#message{
+	color: var(--c3);
+	font-family: sans-serif;
+	font-size:110%;
+}
+
+

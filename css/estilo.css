@@ -1,0 +1,1165 @@
+﻿/* Colores */
+:root {
+    --color-fondo: #f9f9f9;
+    --color-fondo-elementos: silver;
+    --text0:white;
+    --c0: #33b400; 
+    --c1: #A5A6A6;
+    --c2: #090;
+    --c3: #004200;
+    --c4: black;
+    --c7:#c00;/*color advertencias*/
+}
+body{
+	margin: 0px;
+	background-color: var(--color-fondo);
+	font-family: sans-serif;
+    height: auto;
+}
+
+/*--------------------Estilos del Encabezado--------------------*/
+header{	
+	position: sticky;
+	width: 100%;
+	height: auto;
+	background: var(--c0);
+	font-size:100%;
+	color:	var(--c4);
+	padding:0;
+	padding-left: 0;
+	border-bottom: 5px solid var(--c3);
+    z-index: 1000;
+}
+header :link{
+	text-decoration: none;
+
+}
+.opc_busqueda{
+	position: relative;
+ 	width: 90px;
+ 	padding: 0%;
+ 	margin-right: -6px; 
+ 	border-radius: 5px 0 0 5px;
+}
+/*Otorga el estilo a los campos de los formularios y la barra de búsqueda*/
+input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[type="number"] {
+    width: 35%;
+    height: 1.83em; 
+    margin-right: 0%;
+    padding: 0.5%;
+    display: inline;
+    border: 1.5px var(--c3) solid;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+    font-size: 120%;
+}
+input[type="date"]{
+    width: 262px;
+    font-style: sans-serif;
+    font-weight: bold;
+    color: var(--c3);
+    font-size: 160%;
+}
+select{
+    position: relative;
+    top: -1px;
+    width: 50%;
+    height: 2.3em;
+    margin-right: 0%;
+    border: 1.5px var(--c3) solid;
+    border-radius: 0 5px 5px 0;
+    font-size: 100%;
+}
+ul{	
+	position: relative;
+    list-style-type: none;
+    margin: 0px;
+    
+}
+li{
+	display: inline;
+}
+.logo{
+	position: relative;
+	top: 35PX;
+	height: 80px;
+	margin:0;
+    margin-left: -20px;
+}
+button.Boton_busqueda {
+	color: transparent;
+}
+.Boton_busqueda{
+	position: relative;
+    top: -2px;
+	height: 35px; 
+	width: 50px;
+	background: url(../img/lupa.png);
+	background-size: 25px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 1% 1% -54px;
+	border-radius: 0 5px 5px 0;
+	border-left: 1.5px solid var(--c3);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+.mensaje{
+	color: var(--text0);
+	font-weight: bold;
+	margin-right: -92px;
+	font-size: 100%;
+}
+#headerban{
+    color: var(--text0);
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 16%;
+    padding-bottom: 5px;
+}
+.logouser{
+	background: url(../img/lupa.png);
+	height: 20px;
+	margin-right: 5px;
+}
+.ingresar {
+	position: relative;
+	display: inline-block;
+	width: 7.75em;
+	height: 29.1px;
+	padding: 1px 5px 1px 5px; 
+    color: var(--text0);
+    border-left: 2px solid var(--color-fondo); 
+    text-align: center;
+    text-decoration: none;
+	font-size: 130%;
+	margin-left: 6.7em;
+	font-weight: bold;
+    overflow: visible;
+}
+.ingresar-contenido {
+	display: none;
+	position: absolute;
+	color: var(--c3);
+	background-color: var(--color-fondo);
+    width: 187.5px; 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    overflow: hidden;
+}
+.ingresar-contenido img{
+    margin-left: 25%;
+    display: block;
+    width: 50%;
+}
+.ingresar:hover {
+	border-bottom-width: 1px;
+    background-color:  var(--color-fondo);
+    border-right: 2px solid var(--c3); 
+    color: var(--c3);
+    margin-right: 0px;
+    overflow: visible;
+}
+.ingresar:hover .ingresar-contenido{
+    position: absolute;
+    display: block;
+    background-color:  var(--color-fondo);
+    left: -2.4em;
+    border-left: 2px solid var(--c3); 
+    border-right: 2px solid var(--c3); 
+    border-bottom: 2px solid var(--c3);
+    overflow: hidden;
+}
+header ul li div div span {
+	color: var(--c2);
+    text-align: center;
+}
+/*----------BOTONES DE LA BARRA DE NAVEGACION ----------*/
+.Btn_ingreso, .Btn_registro{
+	width: 100%;
+	border-radius: 2px;
+	color: var(--text0);
+	font-weight: bold;
+	padding: 5%;
+	font-size: 85%;
+	margin-top:1em;
+    margin-bottom: 1em;
+    border-color: transparent;
+}
+.logocontenido{
+	height: 30px;	
+}
+
+.Btn_ingreso{
+	background-color: #f30;
+}
+.Btn_registro{
+	background-color: #002d66;
+}
+.logoayuda{
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+	height: 30px;
+}
+aside{
+	position: relative;
+	float: left;
+	padding-left: 10px;
+	height: 100%;
+	width: 22%;
+	margin: 1% 0 0px 0.3%;
+	border-right: 1px var(--c1) solid;
+}
+#span_aside{
+	color: var(--c3);
+	font-weight: bold;
+	text-align: left;
+}
+#Administrador #Btn_filtrado_form{
+    font-size: 100%;
+    color: var(--text0);
+    position: relative;
+    width: 15%;
+    padding: 1%;
+    margin:0;
+    left: 42%;
+}
+
+#Administrador select{
+    position: relative;
+    font-size: 100%;
+    width: 31%;
+    padding: 0%;
+    margin-left: 0;
+    left: 34%;
+}
+#Administrador {
+    padding:2%;
+}
+#Administrador #principal {
+    position: relative;
+    background-color: grey;
+    margin-right: 0.5%;
+    display: inline;
+    width: 40%; 
+}
+#Administrador #li0 {
+    float: left;
+    margin-right: 0.5%;
+    width: 40%;
+}
+#Administrador #li1{
+    width: 40%;
+    float: left;
+    
+}
+#Administrador #btn{
+    width: 19%;
+    float: left;
+}
+
+#Administrador #Btn_filtrado{
+    position: relative;
+    height: 100%;
+    padding: 4%;
+    bottom: 0;
+    margin:1%; 
+    width: 100%;
+    top: 0px;
+    left:0px;
+}
+
+#Administrador b{
+    color: var(--c3);
+}
+
+#Administrador #item {
+
+    position: relative;
+    height: 80px;
+}
+
+#Administrador #item #id{
+
+    font-weight: bold;
+    display: block;
+    }
+#Administrador span {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;: 
+}
+
+dd a{
+	text-decoration: none;
+	color: var(--c0);
+}
+dd a:hover{
+	text-decoration: underline;
+	color: var(--c3);
+}
+dt {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+/* INICIA EL ESTILO DEL CHECK CBO */
+.container {
+    color: var(--c0);
+}
+.Rcontainer {
+    color: var(--c0);
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* oculta el checkbox por defecto */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* crea el checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-fondo-elementos);
+}
+/* color de fondo con mouse encima */
+.container:hover input ~ .checkmark {
+    background-color: var(--c1);
+}
+
+/* cambio de color cuando la checkbox esta seleccionada */
+.container input:checked ~ .checkmark {
+    background-color: var(--c0);
+}
+
+/* cirrea el chkeckbox box*/
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* muestra la marca cundo el campo esta checkeado */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* estiliza el contenedor */
+.container .checkmark:after {
+    left: 5.5px;
+    top: 2.5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--text0);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* INICIA EL ESTILO PARA EL RADIO BUTTON */
+/* contiene el radiobutton */
+.Rcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* oculta el radio button por defecto */
+.Rcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* crea el radio button */
+
+.Rcheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-fondo-elementos);
+    border-radius: 50%;
+}
+
+/* hace enfasis en el color al hover */
+.Rcontainer:hover input ~ .Rcheckmark {
+    background-color: var(--c1);
+}
+
+/* cuando el radio button esta seleccionado pone el color de fondo */
+.Rcontainer input:checked ~ .Rcheckmark {
+    background-color: var(--c0);
+}
+
+/* oculta el circulo si no esta activo */
+.Rcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* muestra el circulo interno*/
+.Rcontainer input:checked ~ .Rcheckmark:after {
+    display: block;
+}
+
+/* estiliza el indicador */
+.Rcontainer .Rcheckmark:after {
+ 	top: 6px;
+	left: 5.5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--text0);
+}
+/*para los formularios inicia*/
+fieldset img{
+    height: 100px;
+    border: 3px var(--c2) dashed;
+    margin-left: 50px;
+    padding: 10px; 
+}
+fieldset {
+       border:0px;
+}
+legend {
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    color: var(--c2);
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/*INICIO BOTONES FORMULARIO*/
+section form input[type="submit"],[type="reset"]{
+	margin-left: 15px;
+	width: 120px;
+	border-radius: 5px;
+	color: var(--color-fondo);
+	background-color: var(--c2);
+	font-weight: bold;
+	padding: 1%;
+	font-size: 110%;
+	border-color: var(--c3);
+    margin-bottom: 20px;
+}
+section form input[type="submit"]:hover{
+	background-color: var(--c3);
+	border-color: var(--c4);
+	box-shadow: 0px 2px 4px 3px var(--color-fondo-elementos);
+}
+section form input[type="reset"]:hover{
+    background-color: var(--c3);
+    border-color: var(--c4);
+    box-shadow: 0px 2px 4px 3px var(--color-fondo-elementos);
+}
+/*DISEÑO CAMPOS FORMULARIO*/
+/*-------------!!!!!!!!!!!!!!!!----------Revisar etcquetas select para eliminar class en el html*/
+section form fieldset input, textarea, #selectformulario,.emailformulario,#passwordformulario,fieldset select{
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: 1.5px var(--c3) solid;
+  }
+section textarea{
+	resize: none;
+	width: 49%;
+	overflow: auto;
+}
+
+/*INICIA LA SECCION*/
+section span {
+    color: var(--c3);
+}
+#section {
+	top: 1%;
+	width: 65%;
+	height: auto;
+	margin: 1% 0 10% 25%;	
+	padding-top: 1%; 
+	padding-left: 2%;
+	padding-bottom: .5%;
+}
+#item {
+	position: relative;
+	height: 180px;
+	width: 99%;
+	border-bottom: 1px var(--c1) solid;
+	margin-bottom: 1.5%;
+	border-radius: 2px;
+	padding: 0.5%;
+    overflow: hidden;
+}
+#item:hover{
+	box-shadow: 0px 1px 0.3px 0.3px  var(--c1) ;
+	text-decoration: none;
+}
+section ul li{
+    display: list-item;
+}
+
+section a:link{
+    color: var(--c3);
+}
+/*------------------------CONTENIDO DE LAS LISTAS DE ITEMS-----------------*/
+section ul li a h3 {
+    color: var(--c3);
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+section ul li a{
+    color: var(--c2);
+}
+section ul li img{
+    float: left;
+    margin: 5px;
+    height: 170px;
+    width: 170px;
+}
+.Agenda{
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+footer {
+    position: relative;
+   	width: 100%;
+    display: inline;
+    margin-right: 0;
+    margin-left: 0;
+    
+	background-color: var(--text0);
+}
+footer :link{
+	display: inline;
+	margin-right: 1%;
+	color: var(--c3);
+	text-decoration: none;
+}
+footer :visited{
+    color: var(--c4);
+}
+
+/*-----------------VENTANITAS DE AYUDA EN FORMULARIOS------------------*/
+.ayuda{
+    position: relative;
+    top: -40px; 
+    text-align: center;
+    background-color: var(--c0);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+    margin-left: 10px;
+}
+.ayuda:before{
+    content:'?';
+    font-weight: bold;
+    color:var(--text0);
+}
+.ayuda:hover p{
+    display:block;
+    transform-origin: 100px 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 999;
+}
+.ayuda:active p{
+    display:block;
+    transform-origin: 100px 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.ayuda p{    /* contenido de la ventana de ayuda y estilo */
+    display: none;
+    text-align: left;
+    background-color: var(--c3);
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+	box-shadow: 0px 2px 20px 3px var(--color-fondo-elementos);
+    right: -3px;
+    color: var(--text0);
+    font-size: 13px;
+    line-height: 1.4;
+    left:-10px;
+    top: 18.5px;
+    font-size:110%;
+}
+.ayuda p:before{ /* ventana de ayuda triangulito */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:var(--c3);
+    right:312px;
+    top:-12px;
+     
+}
+.ayuda p:after{ /* sobrepone el cuadro de ayuda */
+    width:100%;
+    content:'';
+    position: relative;
+    margin-left:100px;
+
+}
+.ayuda a:link {/*los link de la ayuda cuando ya fueron visitados*/
+	color: var(--text0);
+	font-weight: bold;
+}
+.ayuda a:visited {/*los link de la ayuda cuando ya fueron visitados*/
+	color: var(--text0);
+}
+/* animacion del cuadro de ayuda */
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity:0; 
+        transform: scale(0.6);
+    }
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+.banner{
+    width: 100%;
+}
+    /*---Mensaje de alerta Advertencia usar con id para realizar el cambio en php!---*/
+    #Advertencia{
+        background-color: var(--c7);
+    }
+    #Advertencia:before{
+        content:'!';
+    }
+    #Advertencia p{    /* contenido de la ventana de ayuda y estilo */
+    background-color: var(--c7);
+    }
+
+/*-----------------estilos para pagina de ayuda contenedor principal de los elemntos----------------------*/
+.cajaprincipal{ 
+ position: relative;
+  top:50%; 
+  width: 90%;
+  height: 200%;
+  left: 5%;
+  background: var(--c2);
+  text-align: center; 
+  overflow: visible;
+  
+}
+.cajaprincipal img{ 
+  width: 90%;
+  height: auto;
+}
+.cajauno{
+    position: relative;
+    float:left;
+    width: 24%;
+    margin: 2%;
+    padding: 2%;
+    background-color: var(--color-fondo);
+    border-radius:2em;
+    height: 35em;
+    
+}
+.cajados{
+    position: relative;
+    margin: 2% 0 0 4%;
+    float:left;
+    width: 24%;
+    padding: 2%;
+    background-color: var(--color-fondo);
+    border-radius:2em;
+    height: 35em;
+}
+.cajatres{
+    position: relative;
+    float:right;
+    width: 24%;
+    margin: 2%;
+    padding: 2%;
+    background-color: var(--color-fondo);
+    border-radius:2em;
+    height: 35em;
+    
+}
+.cajacuatro{
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    margin: 0 2% 2% 2%;
+    height: 40%;
+    padding: 2%;
+    background-color: var(--color-fondo);
+    border-radius:2em;
+}
+.cajacinco{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    margin: 0 15% 15% 15%;
+    height: 10%;
+    padding: 2%;
+    background-color: var(--color-fondo);
+    border-radius:2em;
+    text-align: center;
+}
+/*-----------------fin contenedor principal de los elemntos de la pagina de ayuda----------------------*/
+section h3{
+    text-align: center;
+}
+
+/*--Estilos login--*/
+.login{
+    position: absolute;
+    background: white; /* para IE */
+    background: rgba(255, 255, 255, .75);
+    height: 18em;
+    min-height: 350px;
+    width:30%; 
+    min-width: 325px;
+    z-index: 998;
+    left: 35%;
+    text-align: center;
+    font-size: 150%;
+    overflow: hidden;
+    top: 8em;
+    border-radius: 25px;
+}
+.loginfondo{
+    -webkit-filter:blur(8px);
+  -ms-filter: blur(8px);
+  -o-filter: blur(8px);
+  filter:blur(8px);
+  position: relative;
+  overflow: hidden;
+
+}
+#nom_pro{
+    padding-top: 1%;
+    padding: 1%;
+    font-size: 100%;
+    width: 70%;
+    margin-left:-5px;
+
+}
+
+
+
+/*  página de cista de productos */
+
+#filtrado{
+    position: relative;
+    display: inline-block;
+    background-color: var(--c3);
+    height: 60px;
+    width: auto;
+    padding:0.5%;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px; 
+}
+#filtrado span,label {
+    color: var(--color-fondo);
+
+}
+#filtrado input[type="text"] {
+    width: 100%;
+    font-weight: bold;
+    padding: 1%;
+    font-size: 110%;
+    border-color: var(--c2);
+}
+#filtrado select{
+    font-weight: bold;
+    border-color: var(--c2);   
+    margin: 0px;
+    width: 100%; 
+    font-size: 110%;
+}
+#filtrado fieldset {
+    display: inline;
+    margin-right: 10px;
+    padding: 0px;
+    width: 120px;
+}
+#Btn_filtrado{
+    position: relative;
+    height: 70px;
+    width: 70%;
+    font-size: 110%;
+    font-weight:bold;
+    color: var(--color-fondo);
+    top: -10px;
+    background-color: var(--c2);
+    border-color: transparent;
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
+}
+#Btn_filtrado:hover{
+    background-color: var(--c0);
+}
+#Btn_filtrado_form{
+    position: relative;
+    width: 70%;
+    font-size: 110%;
+    font-weight:bold;
+    color: var(--color-fondo);
+    left: 8%;
+    padding: 5%;
+    background-color: var(--c2);
+    border-color: transparent;
+    margin: 5%;
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
+}
+#Btn_filtrado_form:hover{
+    background-color: var(--c0);
+}
+
+#section3 #Btn_filtrado{
+   width: 10%;
+   float: right;
+   margin-right: 10px;
+   top: -75px;
+}
+#Btn_filtrado:active{
+    background-color: var(--c3);
+}
+#navegacionPaginas{
+    list-style-type: none;
+    overflow: hidden;
+    display: block;
+}
+#navegacionPaginas li {
+    display: block;
+    float: left;
+}
+#navegacionPaginas input[type=submit] {
+    position: relative;
+    font-weight: bold;
+    font-size: 110%;
+    background-color: var(--c2);
+    border-color: transparent;
+    border-radius: 5px;
+    margin: 3px;
+    color: white;
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    -webkit-transition: background-color 0.25s; /* Safari */
+    transition: background-color 0.25s;
+}
+#navegacionPaginas input[type=submit]:hover {
+    background-color: var(--c3);
+    color: var(--text0);
+}
+#section3{
+    position: relative;
+    padding-top: 1%;
+    margin-left: 25%;
+}
+#section3 article ul li img{
+    height: 100px;
+}
+#section3 article ul{
+    height: 120px;
+}
+#section3 article ul li h3{
+    margin: 1px;
+    text-align: left;
+
+}
+
+
+.resultados span{
+   font-style: italic;
+   color: var(--c1);
+}
+.resultados b{
+   font-style: italic;
+   text-decoration: underline;
+   color: var(--c0)
+}
+/*pagina de búsqueda enlace consulta especializada*/
+.linkEsp{
+    margin-left: 14%;
+    font-weight: bold;
+    color: var(--c3);
+}
+.linkEsp:visited{
+    color: var(--c2);
+}
+/*cerificacion estatus imagen certificacion*/
+
+.cert{
+    height: 15px;
+    width: 15px;
+}
+#special{
+    position: relative;
+    display: block;
+    margin-bottom: 400px;
+}
+
+.terminosYcondiciones{
+    position: relative;
+    height: 65em;
+}
+#ventana{
+   background-color: #f9f9f9;
+   position: absolute;
+   border-radius: 0.5em;
+   width: 50%;
+   left: 25%;
+   top: 30%;
+   padding: 1%;
+   overflow: visible;
+   z-index: 10000;
+   border: rgba(165, 166, 166, 1);
+   box-shadow: 5px 8px 30px var(--c3);
+}
+#legendV{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 7%;
+}
+#pos{
+    float: right;
+    margin-right: 6%;
+}
+#ventana #message{
+    width: 85.5%;
+    margin-left: 7%;
+}
+#best{
+    overflow: visible;
+    margin-left: 10%;
+       
+}
+
+#item1{
+    height:auto;
+    width:100%;
+    display:inline-block;
+    padding: 1%;
+    margin: 1%;
+}
+#recientes{
+    float:left;
+    height:160px;
+    width:18%;
+    margin-right: 1%; 
+    margin-bottom: 10%;
+}
+#recientes img{
+    height:80%;
+    width:150px;
+}
+
+#recientes p{
+    color:var(--c3);
+    text-align: center;
+}
+#cerrar{
+    background-image: url(..//img/equiz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: var(--c3);
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    left: 96%;
+    top: -10%;
+    border-radius: 50%;
+    transition: background-color 150ms ease-in-out;
+    font-weight: bold;
+    font-size: 100%;
+    border: rgba(165, 166, 166, 1);
+    box-shadow: 5px 8px 30px var(--c3);
+}
+#cerrar:hover{
+    background-color: var(--c0);
+}
+#pic{
+    width: 10em;
+}
+#imagenVistaInternaProducto{
+    height: 10em;
+    width: 7em;
+}
+#coment{ 
+    width: 44%;
+    font-size: 120%;
+    font-family: calibri;
+    padding: 0.5%;
+ }
+ #headerSepecial{
+    height: 50px;
+    visibility: hidden;
+}
+#imagen_index{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+/*Inicio de modificar foto*/
+#cajon_fotos{
+    width: 100%;
+    height: 24em;
+    position: static;
+    margin: auto;
+}
+.foto1{
+    width: 39%;
+    height: 40%;    
+    float: left;
+    position: relative;
+    margin-right: 1%; 
+    margin-bottom: 1%;
+}
+.foto1 #cerrar{
+    margin-left: 87%;
+    margin-top: 3%;
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--c7);
+    opacity: 0.3;
+}
+.foto1 #cerrar:hover{
+    opacity: 1;   
+}
+.foto1 input{
+    display: none;
+}
+.foto{
+    height: 100%;
+}
+.foto2{
+    position: relative;
+    width: 20%;
+    height: 40%;
+    float: left;
+}
+.foto2 label{
+    background-image: url('../img/Signo_Mas.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+}
+#subirfoto{
+    width: 85.5%;
+    margin-left: 40%;    
+    border-right: solid 2px #908989;
+    border-bottom: solid 2px #908989;
+    color:var(--c2);
+    padding: 20px
+}
+#selec_foto{
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+#perfil{
+    width: 40%;
+    height: 13em;       
+}
+#perfil .foto1{
+    width: 100%;
+    height: 100%;
+    float: none;
+    position: relative;
+    margin-right: 1%; 
+    margin-bottom: 1%;
+}
+#perfil .foto1 .foto2{
+    background-image: url('../img/camara.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    float: none;
+    bottom: 1%;
+    width:100%;
+    height:30%;
+    margin-left: -74%;
+    position: absolute;
+    opacity: 0;         
+}
+#perfil .foto1 .foto2:hover{
+    opacity: 1;
+}
+/*Fin de modificar foto*/
+
+/*perfil de empresa externo 'vista perfil empresa' */
+.perfil{
+    /*padding-left: 42%;*/
+}
+/*fin 'vista perfil empresa' */
+
+/*Perfil de usuario*/
+#informacionUsuario{
+    text-align: left;
+    list-style-type: circle;
+    font-size: 110%;
+    color: var(--c3);
+}
+
+#mensajesPerfil{
+    position: relative;
+    left: 25%;
+    width: auto;
+    overflow: hidden;
+}
+#mensajesPerfil h3{
+    position: relative;
+    left: 25%;
+    color: var(--c3);
+}
+
+/*Fin Perfil de usuario*/

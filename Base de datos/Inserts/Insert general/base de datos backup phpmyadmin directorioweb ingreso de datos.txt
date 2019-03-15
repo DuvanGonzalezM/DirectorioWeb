@@ -1,0 +1,51 @@
+use bddirectorioweb;
+
+insert into empresa values ('800000000','COMESTIBLES ALFA','Av Troncal de occidente No. 17-65 Mosquera', '8932191', 'si', 'contactenos@comestiblesalfa.com', 'CAROLINA', 'www.comestiblesalfa.com', '35',NULL,NULL,'0000',NULL,DEFAULT,'');
+insert into empresa values ('800000001','FINCA',' KM 12 Vía a Mosquera, Funza','4320180','no','contactenos@finca.com','MARIA','NULL','10',null,null,'0000',NULL,DEFAULT,'');
+insert into empresa values ('800000002','CABAÑA ALPINA','Cr3 15-57 Mosquera','018000529999','no','contactenos@cabañaalpina.com','carlos','www.alpina.com.co','100',null,null,'0000',NULL,DEFAULT,'');
+insert into empresa values ('800000003','ALPI','Cr3 15-57 Mosquera','018000522299','no','contactenos@alpi.com','carlota','www.alp.com.co','100',null,null,'0000',NULL,DEFAULT,'');
+
+insert into usuario values (null,'CAMILO','RODRIGUEZ','1024031987','3213214567','si','camirod@gmail.com','0000',null,DEFAULT);
+insert into usuario values (null,'CARLOS','RIOS','1098765432','311765454','si','carios@gmail.com','0000',null,DEFAULT);
+insert into usuario values (null,'FLOR','GIRALDO','79876454','316987676','no','flogi@gmail.com','0000',null,DEFAULT);
+insert into usuario values (null,'ADMINISTRADOR','DIRECTORIO','88888888','3112571005','no','directorio@gmail.com','1234',null,'1');
+
+insert into producto values (null,'800000000','PLASTICO COCINA','INSUMO','plastico para empaque al vacio','18000',default,'12','si',default,NOW());
+insert into producto values (null,'800000000','MAQUINA EMPACADORA','MAQUINARIA','Maquina empacadora al vacio','18000000',default,'1','si',default,NOW());
+insert into producto values (null,'800000001','ALIMENTO PARA GATOS','INSUMO','Concentrado a base de carne y pollo','50000',default,'6','si',default,NOW());
+
+insert into servicio values (null,'800000003','TRANSPORTE DE INSUMOS','TRANSPORTE DE INSUMOS','150000','Transporte especializado de alimentos con sistema de refrigeración',default,'');
+insert into servicio values (null,'800000001','LIMPIEZA DE CUARTOS FRIOS','LIMPIEZA DE CUARTOS FRIOS','100000','Personal experto en limpieza de residuos',default,'');
+insert into servicio values (null,'800000002','CORTE DE CARNES','CORTE DE CARNES','1500','Servicio de corte y porcionamiento de todo tipo de carnes',default,'');
+
+insert into valoracionproducto values (null,'1','1','2018-07-14','5','Producto de excelente calidad');
+insert into valoracionproducto values (null,'2','2','2018-07-12','4','Producto de muy bueno');
+insert into valoracionproducto values (null,'3','2','2018-04-12','2','El producto llegó con el empaque alterado');
+
+insert into valoracionservicio values (null,'2','3','2018-04-13','1','El personal llegó tarde');
+insert into valoracionservicio values (null,'1','2','2018-02-13','5','El producto llegó con muy bien');
+insert into valoracionservicio values (null,'3','3','2017-04-13','4','Muy buen trabajo');
+
+insert into agendaconsultas values (null,'2017-04-13','800000003','2','Solicito servicio para el proximo martes');
+insert into agendaconsultas values (null,'2018-01-13','800000002','1','No me ha llegado el producto, Qué hago');
+insert into agendaconsultas values (null,'2017-12-13','800000001','3','Cuánto cuesta el bulto de abono');
+
+insert into permiso values(null,'administrador',null);
+insert into permiso values(null,'empresario',null);
+insert into permiso values(null,'cliente',null);
+
+insert into telsempresa values(null,'800000001','3127656789');
+insert into telsempresa values(null,'800000002','3125433789');
+insert into telsempresa values(null,'800000003','3133456789');
+
+insert into telsusuario values(null,'1','5434567');
+insert into telsusuario values(null,'2','3215434567');
+insert into telsusuario values(null,'3','3115487607');
+
+insert into pqrempresa values(null,'800000001','Actualizar datos','Por favor actualizar mi telefono');
+insert into pqrempresa values(null,'800000002','nuevo producto','Por favor actualizar mi producto');
+insert into pqrempresa values(null,'800000003','Actualizar correo','Por favor actualizar mi correo');
+
+insert into pqrusuario values(null,'1','Actualizar datos usuario','Por favor actualizar mi telefono usuario');
+insert into pqrusuario values(null,'2','nuevo producto usuario','Por favor actualizar mi producto usuario');
+insert into pqrusuario values(null,'3','Actualizar correo usuario','Por favor actualizar mi correo usuario');  

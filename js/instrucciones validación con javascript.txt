@@ -1,0 +1,22 @@
+Validación de inputs en los formularios, agregar después del value:
+
+Para solo números=
+onkeyup="this.value=Numeros(this.value)"
+
+Para números y texto=
+onkeyup="this.value=NumText(this.value)"
+
+Reemplazar espacios por guión:
+onkeyup="this.value=Espacios(this.value)"
+
+Convertir a mayúsculas:
+onkeyup="this.value=Mayuculas(this.value)"
+
+Para tarjeta de crédito:
+onkeyup="Card(event, this)"
+
+En el footer o header hacer el llamado a JavaScript de la siguiente manera:
+<script src="validacion.js">  //nombre del Archivo JavaScript
+	</script>
+
+ 

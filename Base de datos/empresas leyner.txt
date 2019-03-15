@@ -1,0 +1,17 @@
+Número NIT: 800543
+Razón social: Distriempaques sas
+Dirección: calle 170# 25-03
+Teléfono: 644700
+Correo Electrónico: distriempaques@gmail.com
+Contraseña: empaques
+Verifica tu Contraseña: empaques
+
+	
+
+Número NIT: 10730
+Razón social: Granos la despensa sa
+Dirección: cra 9 #10a 19
+Teléfono: 644799
+Correo Electrónico: ladespensa@gmail.com
+Contraseña: despensa
+Verifica tu Contraseña: despensa

@@ -1,0 +1,172 @@
+#principal{
+	width: 900px;
+	height: auto; overflow: hidden;
+	border: 0px solid #ccc;
+	margin: auto;
+	font-family: Berlin Sans FB;
+
+}
+
+header{
+
+	width: 900px;
+	height: 100px;
+	border: 0px solid #ccc;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	border: 0px solid #fff;
+	float: left;
+}
+
+.titulo{
+
+	font-size: 20px;
+	color: #fff;
+	opacity: 0.9
+
+}
+
+.sub-titulo{
+	font-size: 12px;
+	margin-top: -10px;
+	color: #fff;
+	opacity: 0.9
+
+}
+
+.menu{
+	width: 485px;
+	height: 40px;
+	float: right;
+	margin-top: 40px;
+	background-color: rgba(0, 0, 172, 0.8);
+	opacity: 0.8
+}
+
+.menu ul{}
+
+.menu ul li{
+	list-style: none;
+	float: left;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 0px solid #ccc;
+	color: #fff;
+}
+.menu ul li a:hover{
+	background: #27AE60;
+	color: #fff;
+	transition: background 1s, color 1s;
+}
+
+#banner{
+}
+
+
+#categorias{
+	width: 900px;
+	height: auto; overflow: hidden;
+	border: 0px solid  
+	margin-top: 10px;
+
+
+}
+
+.uno{
+	
+	font-family: Berlin Sans FB;
+	width: 280px;
+	height: auto; overflow: hidden;
+	border: 1px solid #ccc;
+	float: left;
+	padding: 5px;
+	text-align: center;
+	color: #27AE60;
+	background: white;
+	opacity: 0.8
+
+}
+ 
+.parrafo{
+	color: #707070;
+}
+
+.dos{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.leer-mas{
+	text-decoration: none;
+	border: 1px solid #006699;
+	padding: 10px 20px 10px 20px;
+	margin: 10px;
+
+}
+
+.leer-mas:hover{
+	background: #48C9B0;
+	color: #fff;
+	transition: background 1s, color 1s;
+
+}
+
+#info{
+	width: 900px
+	height: auto; overflow: hidden;
+	border: 0px solid #EF8FBC;
+	margin-top: 10px;
+}
+
+#izq{
+	width: 590px;
+	height: 300px;
+	border: 1px solid #ccc;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px; color: yellow;
+	background: white;
+	opacity: 0.8
+}
+
+.img{
+	margin-right: 7px;
+	margin-bottom: 7px;
+	opacity: 0.9
+}
+
+#der{
+	width: 290px;
+	height: 305px;
+	border: 1px solid #ccc;
+	float: right;
+	text-align: center;
+	background: white;
+	opacity: 0.8
+}
+
+footer{
+	width: 900px;
+	height: 100px;
+	text-align: center;
+}
+
+#footer p{
+	width: 500px; 
+}
+
+body{
+	background-image:url("file:///C:/Users/USER/desktop/fondo8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+

@@ -1,0 +1,505 @@
+/* Colores */
+:root {
+    --color-fondo: #f9f9f9;
+    --color-fondo-elementos: silver;
+    --text0:white;
+    --c0: #3c0; 
+    --c1: #A5A6A6;
+    --c2: #01434F;
+    --c3: #00282F;
+    --c4: black;
+}
+body{
+	margin: 0px;
+	background-color: var(--color-fondo);
+	font-family: sans-serif;
+}
+header{	
+	position: sticky;
+	width: 100%;
+	height: auto;
+	background: var(--c0);
+	font-size:100%;
+	color:	var(--c4);
+	padding:0.5%;
+	z-index: 1;
+	padding-left: 2%;
+	border-bottom: 5px solid var(--c3);
+}
+header :link{
+	text-decoration: none;
+}
+.opc_busqueda{
+	top: 0px;
+	position: relative;
+ 	width: 90px;
+ 	padding: 0%;
+ 	margin-right: -6px; 
+ 	border-radius: 5px 0 0 5px;
+}
+input[type=text], select {
+	top: 10px;
+    width: 50%;
+    padding: 1% 1% 1% 1% ; 
+    margin-right: 0%;
+    height: 35px;
+    display: inline-block;
+    border: 1.5px var(--c3) solid;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+}
+ul{	
+	position: relative;
+    list-style-type: none;
+    margin: 0px;
+    
+}
+li{
+	display: inline;
+}
+.logo{
+	position: relative;
+	top: 25PX;
+	height: 80px;
+	margin:0;
+}
+button.Boton_busqueda {
+	color: transparent;
+}
+.Boton_busqueda{
+	position: relative;
+	height: 35px; 
+	width: 50px;
+	background: url(../img/lupa.png);
+	background-size: 25px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 1% 1% -54px;
+	border-radius: 0 5px 5px 0;
+	border: 1.5px solid var(--c3);
+}
+.Boton_busqueda:hover{
+	background-color: var(--c0);
+}
+.mensaje{
+	color: var(--text0);
+	font-weight: bold;
+	margin-right: -95px;
+	font-size: 100%;
+}
+.logouser{
+	background: url(../img/lupa.png);
+	height: 20px;
+	margin-right: 5px;
+}
+.ingresar {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: 29.1px;
+	padding: 1px 5px 1px 5px; 
+	color: var(--c4);
+    border-left: 2px solid var(--color-fondo); 
+    text-align: center;
+    text-decoration: none;
+    color: var(--text0);
+	font-size: 25px;
+	margin-left: 105px;
+	font-weight: bold;
+}
+.ingresar-contenido {
+	display: none;
+	position: absolute;
+	color: var(--c3);
+	background-color: var(--color-fondo);
+    width: 195px;
+    top: 31px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+.ingresar:hover {
+	border-bottom-width: 0px;
+    background-color:  var(--color-fondo);
+    border-right: 2px solid var(--c3); 
+    color: var(--c3);
+    margin-right: -2px;
+}
+.ingresar:hover .ingresar-contenido {
+    display: block;
+    background-color:  var(--color-fondo);
+    left: -95px;
+    border-left: 2px solid var(--c3); 
+    border-right: 2px solid var(--c3); 
+    border-bottom: 2px solid var(--c3);
+}
+header ul li div div span {
+	color: var(--c2);
+	font-size: 80%;
+}
+.Btn_ingreso, .Btn_registro{
+	width: 100%;
+	border-radius: 2px;
+	color: var(--text0);
+	font-weight: bold;
+	padding: 5%;
+	font-size: 85%;
+	margin-bottom:5%;
+}
+.logocontenido{
+	height: 30px;	
+}
+.Btn_ingreso{
+	background-color: #f30;
+}
+.Btn_registro{
+	background-color: #002d66;
+}
+.logoayuda{
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+	height: 30px;
+}
+aside{
+	position: relative;
+	float: left;
+	padding-left: 10px;
+	height: auto;
+	width: 22%;
+	margin: 1% 0 0px 0.3%;
+	border-right: 1px var(--c1) solid;
+}
+#span_aside{
+	color: var(--c3);
+	font-weight: bold;
+	text-align: left;
+}
+dd a{
+	text-decoration: none;
+	color: var(--c0);
+}
+dd a:hover{
+	text-decoration: underline;
+	color: var(--c3);
+}
+dt {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+/* INICIA EL ESTILO DEL CHECK CBO */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* oculta el checkbox por defecto */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* crea el checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-fondo-elementos);
+}
+/* color de fondo con mouse encima */
+.container:hover input ~ .checkmark {
+    background-color: var(--c1);
+}
+
+/* cambio de color cuando la checkbox esta seleccionada */
+.container input:checked ~ .checkmark {
+    background-color: var(--c0);
+}
+
+/* crrea el chk box*/
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* muestra la marca cundo el campo esta checkeado */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* estiliza el contenedor */
+.container .checkmark:after {
+    left: 5.5px;
+    top: 2.5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--text0);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* INICIA EL ESTILO PARA EL RADIO BUTTON */
+/* contiene el radiobutton */
+.Rcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* oculta el radio button por defecto */
+.Rcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* crea el radio button */
+
+.Rcheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-fondo-elementos);
+    border-radius: 50%;
+}
+
+/* hace enfasis en el color al hover */
+.Rcontainer:hover input ~ .Rcheckmark {
+    background-color: var(--c1);
+}
+
+/* cuando el radio button esta seleccionado pone el color de fondo */
+.Rcontainer input:checked ~ .Rcheckmark {
+    background-color: var(--c0);
+}
+
+/* oculta el circulo si no esta activo */
+.Rcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* muestra el circulo interno*/
+.Rcontainer input:checked ~ .Rcheckmark:after {
+    display: block;
+}
+
+/* estiliza el indicador */
+.Rcontainer .Rcheckmark:after {
+ 	top: 6px;
+	left: 5.5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--text0);
+}
+/*para los formularios inicia*/
+fieldset {
+       border:0px;
+}
+legend {
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    color: var(--c2);
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+/*INICIO BOTONES FORMULARIO*/
+section form input[type="number"]{
+    width: 424px;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+}
+section form input[type="email"]{
+    width: 410px;
+    height: 30px;
+      border-radius: 0px 5px 5px 0px;
+}
+section form input[type="password"]{
+    width: 415px;
+    height: 30px;
+      border-radius: 0px 5px 5px 0px;
+      }
+section form input[type="file"]{
+    width: 415px;
+    height: 30px;
+      border-radius: 0px 5px 5px 0px;
+      }
+
+section form input[type="submit"]{
+	margin-left: 15px;
+	width: 120px;
+	border-radius: 5px;
+	color: var(--color-fondo);
+	background-color: var(--c2);
+	font-weight: bold;
+	padding: 1%;
+	font-size: 110%;
+	border-color: var(--c3);
+}
+section form input[type="submit"]:hover{
+	background-color: var(--c3);
+	border-color: var(--c4);
+	box-shadow: 0px 2px 4px 3px var(--color-fondo-elementos);
+}
+/*DISEÑO CAMPOS FORMULARIO*/
+section form fieldset input, textarea, #selectformulario{
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: 1.5px var(--c3) solid;
+}
+
+/*INICIA LA SECCION*/
+#section {
+	top: 1%;
+	width: 65%;
+	height: auto;
+	margin: 1% 0 10% 25%;	
+	padding-top: 1%; 
+	padding-left: 2%;
+	padding-bottom: .5%;
+}
+#item {
+	position: relative;
+	height: 200px;
+	width: 95%;
+	border-bottom: 1px var(--c1) solid;
+	margin-bottom: 1.5%;
+	border-radius: 2px;
+	padding: 1%;
+}
+#item:hover{
+	box-shadow: 0px 1px 0.3px 0.3px  var(--c1) ;
+	text-decoration: underline;
+}
+
+footer {
+	position: relative;
+   	width: 100%;
+	height: 5%;
+	padding-bottom: 10px;
+	background-color: var(--text0);
+	margin-top: 250px;
+}
+footer :link{
+	display: inline;
+	margin-right: 1%;
+	color: var(--c3);
+	text-decoration: none;
+}
+/*VENTANITAS DE AYUDA EN FORMULARIOS*/
+.ayuda{
+    position: relative;
+    top: -40px; 
+    text-align: center;
+    background-color: var(--c0);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+    margin-left: 10px;
+}
+.ayuda:before{
+    content:'?';
+    font-weight: bold;
+    color:var(--text0);
+}
+.ayuda:hover p{
+    display:block;
+    transform-origin: 100px 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 999;
+}
+.ayuda:active p{
+    display:block;
+    transform-origin: 100px 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.ayuda p{    /* contenido de la ventana de ayuda y estilo */
+    display: none;
+    text-align: left;
+    background-color: var(--c3);
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+	box-shadow: 0px 2px 20px 3px var(--color-fondo-elementos);
+    right: -3px;
+    color: var(--text0);
+    font-size: 13px;
+    line-height: 1.4;
+    left:-10px;
+    top: 18.5px;
+    font-size:110%;
+}
+.ayuda p:before{ /* ventana de ayuda triangulito */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:var(--c3);
+    right:312px;
+    top:-12px;
+     
+}
+.ayuda p:after{ /* sobrepone el cuadro de ayuda */
+    width:100%;
+    content:'';
+    position: relative;
+    margin-left:100px;
+
+}
+.ayuda a:link {/*los link de la ayuda cuando ya fueron visitados*/
+	color: var(--text0);
+	font-weight: bold;
+}
+.ayuda a:visited {/*los link de la ayuda cuando ya fueron visitados*/
+	color: var(--text0);
+}
+/* animacion del cuadro de ayuda */
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity:0; 
+        transform: scale(0.6);
+    }
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}

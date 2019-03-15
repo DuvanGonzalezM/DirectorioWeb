@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8 iso88-59-1">
+	<link rel="stylesheet" type="text/css" href="estilof.css">
+	<title>Formatos</title>
+</head>
+<body>
+<header align="center">
+<hl style="color: black; font-weight: bold; id="hl">Registrarse cómo:</hl>
+</header>
+
+<div id="uno"  class="opacity">
+<h1>USUARIO</h1>
+<div id=d1uno>
+</div>
+<h2>Podra acceder a:<br>Consultar datos de empresas<br>Guardar, calificar y obtener los<br>datos más recientes de las empresas</h2>
+</div>
+
+
+<div id="dos" class="opacity">
+<h1>EMPRESA</h1>
+<div id=d2dos>
+</div>
+<h2>Podra acceder a:<br>Crear y ofrecer nuevos productos<br>Crear y ofrecer nuevos servicios<br>Consultar datos de empresas<br>Guardar, calificar y obtener los<br>datos más recientes de las empresas</h2>
+<form action="www.google.com">
+</form>
+</div>
+
+
+</body>
+</html>

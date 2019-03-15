@@ -1,0 +1,63 @@
+Funciones
+
+Actualizar producto: 
+		update producto set producto_fecha='2018/06/01' where producto_fecha='' ; 
+
+
+		update producto set producto_fecha='2018/09/02' where producto_cod=1 ; 
+		update producto set producto_fecha='2018/09/01' where producto_cod=2 ;
+		update producto set producto_fecha='2018/08/31' where producto_cod=3 ;
+		update producto set producto_fecha='2018/08/30' where producto_cod=4 ;
+		update producto set producto_fecha='2018/08/29' where producto_cod=5 ;
+
+
+Actualizar empresa: 
+		update empresa set empresa_fecha='2018/03/01' where empresa_fecha='';
+
+
+		update empresa set empresa_fecha='2018/09/02' where empresa_nit='815209324';
+		update empresa set empresa_fecha='2018/09/01' where empresa_nit='817186273';
+		update empresa set empresa_fecha='2018/08/31' where empresa_nit='803422841';
+		update empresa set empresa_fecha='2018/08/30' where empresa_nit='800000001';
+		update empresa set empresa_fecha='2018/08/30' where empresa_nit='801129863';	
+
+
+
+
+Organiza por fecha y muestra todos los datos de la empresa:
+SELECT * FROM empresa WHERE empresa_fecha <= CURDATE() order BY empresa_fecha DESC;
+
+Organiza por fecha y muestra únicamente nombre,nit y foto de la empresa:
+SELECT empresa_nom, empresa_nit,empresa_foto  FROM empresa WHERE empresa_fecha <= CURDATE() order BY empresa_fecha DESC;	
+
+
+Seleccionar producto por fecha: 
+SELECT * FROM producto WHERE producto_fecha='2018/09/02';
+
+
+Muestra la fecha actual del sistema formato AAAA/MM/DD:
+select curdate();
+
+
+Muestra los productos que tengan fecha igual o menor a la fecha actual del sistema:
+SELECT * FROM producto WHERE producto_fecha <= CURDATE();
+
+
+Organizar los productos por última fecha en orden descendente: 
+SELECT * FROM producto WHERE producto_fecha <= CURDATE() order BY producto_fecha DESC;
+
+Organiza los productos que estén en ese intervalo de fechas: 
+select * from producto where producto_fecha between '2018/08/31' and '2018/09/02';
+
+Cuantos días han pasado hasta la fecha actual desde cualquier otra fecha: 
+SELECT DATEDIFF(NOW(),'2018-08-02');
+
+Cuantos días faltan para tal fecha: 
+SELECT DATEDIFF(NOW(),'2018-09-22');
+
+
+Muestra los productos que se crearon en la última semana.
+SELECT * FROM producto WHERE ( DATE_ADD( producto_fecha, INTERVAL 1 WEEK ) > CURDATE( ) )
+
+Muestra los últimos productos creados en el último mes:
+SELECT * FROM producto WHERE ( DATE_ADD( producto_fecha, INTERVAL 1 MONTH ) > CURDATE( ) )
